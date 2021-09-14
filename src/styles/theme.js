@@ -9,7 +9,7 @@ export const colors = {
 export const themeDefault = {
   colors: {
     ...colors,
-    primary: colors.orange,
-    secondary: colors.white,
+    primary: colors.purple,
+    secondary: colors.orange,
   },
 };
