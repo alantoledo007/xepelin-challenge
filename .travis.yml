@@ -13,7 +13,7 @@ script:
   - yarn build
 deploy:
   provider: netlify
-  site: 748ad1af-f062-4bb5-b15d-10ec46f4c1dc
+  site: 4b94c090-b000-4b5a-b055-ace965e32c23
   auth: $NETLIFY_TOKEN
   edge: true
   prod: true
