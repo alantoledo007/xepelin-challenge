@@ -1,0 +1,9 @@
+/node_modules
+
+/dist
+
+yarn-error.log
+package-lock.json
+
+.netlify
+.DS_Store
