@@ -18,13 +18,13 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        type: 'asset',
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 1024,
+              limit: 10000,
+              name: '/images/[hash]-[name].[ext]',
             },
           },
         ],
