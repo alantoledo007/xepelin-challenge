@@ -20,10 +20,6 @@ export default function Cover() {
   return (
     <Wrapper>
       <Container>
-        <CometBottom src={ImgCometBottom} />
-        <CometRight src={ImgCometRight} />
-        <CometTop src={ImgCometTop} />
-        <Coin src={ImgCoin} />
         <div>
           <Title>Financia el sueño de tu empresa</Title>
           <P>
@@ -37,6 +33,10 @@ export default function Cover() {
         <div>
           <Img src={ImgCover} alt="Empieza a financiarte - Xepelin" />
         </div>
+        <CometBottom src={ImgCometBottom} />
+        <CometRight src={ImgCometRight} />
+        <CometTop src={ImgCometTop} />
+        <Coin src={ImgCoin} />
       </Container>
     </Wrapper>
   );

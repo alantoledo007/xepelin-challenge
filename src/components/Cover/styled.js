@@ -49,6 +49,16 @@ export const Wrapper = styled.div`
   color: ${({ theme }) => theme.colors.white};
   padding-top: 7.25em;
   background-color: ${({ theme }) => theme.colors.black};
+
+  //me pereció agradable conservar el gradiente para mobile
+  background: linear-gradient(
+    125deg,
+    #27214f 0%,
+    #141531 30%,
+    #141531 70%,
+    #332248 100%
+  );
+  background-size: 100% 100%;
   z-index: -999999;
 `;
 
@@ -95,5 +105,10 @@ export const Img = styled.img`
     margin-bottom: -0.95em; //esto es para que quede exacto al diseño, ya que el somobreado está en la imagen.
     height: 100%;
     display: inline-block;
+    mask-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0) 90%
+    );
   }
 `;
