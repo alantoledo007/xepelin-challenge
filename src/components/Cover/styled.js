@@ -17,7 +17,7 @@ export const CometBottom = styled(CometBase)`
 `;
 
 export const CometTop = styled(CometBase)`
-  top: -8em;
+  top: 0;
   animation: ${cometTopAnimation} 10s ease infinite;
   right: 31%;
   @media ${({ theme }) => theme.devices.desktop} {
@@ -47,7 +47,6 @@ export const Coin = styled(CometBase)`
 
 export const Wrapper = styled.div`
   color: ${({ theme }) => theme.colors.white};
-  padding-top: 7.25em;
   background-color: ${({ theme }) => theme.colors.black};
 
   //me pereció agradable conservar el gradiente para mobile
@@ -68,6 +67,7 @@ export const Container = styled(SharedContainer)`
   align-items: center;
   position: relative;
   min-height: 667px;
+  padding-top: 8.87em;
   height: 100%;
   padding-bottom: 15em;
   @media ${({ theme }) => theme.devices.desktop} {
@@ -108,7 +108,7 @@ export const Img = styled.img`
     mask-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 1) 40%,
-      rgba(0, 0, 0, 0) 90%
+      rgba(0, 0, 0, 0) 85%
     );
   }
 `;

@@ -26,7 +26,7 @@ const Button = styled.a`
 `;
 
 const Text = styled.span`
-  padding: 1.25em;
+  padding: 1.25em 1.75em;
   display: block;
   font-size: 0.9rem;
 `;
