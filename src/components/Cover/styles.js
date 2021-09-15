@@ -54,19 +54,19 @@ export const CometBottom = styled(CometBase)`
 
 export const CometTop = styled(CometBase)`
   top: -8em;
-  right: 31.5em;
   animation: ${cometTopAnimation} 10s ease infinite;
-  @media ${({ theme }) => theme.devices.mobile} {
-    right: 31%;
+  right: 31%;
+  @media ${({ theme }) => theme.devices.desktop} {
+    right: 31.5em;
   }
 `;
 
 export const CometRight = styled(CometBase)`
-  bottom: 8em;
+  bottom: 6.5em;
   right: 0;
   animation: ${cometRightAnimation} 10s ease-out infinite;
-  @media ${({ theme }) => theme.devices.mobile} {
-    bottom: 6.5em;
+  @media ${({ theme }) => theme.devices.desktop} {
+    bottom: 8em;
   }
 `;
 
@@ -84,22 +84,34 @@ export const Container = styled(SharedContainer)`
   position: relative;
   min-height: 667px;
   height: 100%;
-  @media ${({ theme }) => theme.devices.mobile} {
-    padding-bottom: 15em;
+  padding-bottom: 15em;
+  @media ${({ theme }) => theme.devices.desktop} {
+    padding-bottom: 0;
   }
 `;
 
 export const Title = styled.h1`
   font-family: Poppins600;
-  font-size: 3.6rem;
-  line-height: 1.3;
+  line-height: 48px;
   margin-bottom: 0.5em;
+  font-size: 2.25rem;
+  max-width: 287px;
+  letter-spacing: -0.02em;
+  @media ${({ theme }) => theme.devices.desktop} {
+    font-size: 3.6rem;
+    max-width: 509px;
+    line-height: 70px;
+  }
 `;
 
 export const P = styled.p`
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 0.8rem;
+  line-height: 28px;
   margin-bottom: 1.5em;
+  @media ${({ theme }) => theme.devices.desktop} {
+    font-size: 1rem;
+    line-height: 32px;
+  }
 `;
 
 export const Img = styled.img`
