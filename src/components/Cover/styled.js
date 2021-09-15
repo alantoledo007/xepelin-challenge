@@ -1,47 +1,11 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import SharedContainer from '../shared/Container';
-
-const cometTopAnimation = keyframes`
-  0%{
-    transform: translateY(0) scale(1);
-  }
-
-  60%{
-    transform: translateY(2em) scale(.8);
-  }
-
-  100%{
-    transform: translateY(0) scale(1);
-  }
-`;
-
-const cometBottomAnimation = keyframes`
-  0%{
-    transform: translateY(0) scale(1);
-  }
-
-  60%{
-    transform: translateY(-2em) scale(.8);
-  }
-
-  100%{
-    transform: translateY(0) scale(1);
-  }
-`;
-
-const cometRightAnimation = keyframes`
-  0%{
-    transform: translateX(0) scale(1);
-  }
-
-  60%{
-    transform: translateX(-2em) scale(.8);
-  }
-
-  100%{
-    transform: translateX(0) scale(1);
-  }
-`;
+import {
+  cometBottomAnimation,
+  cometRightAnimation,
+  cometTopAnimation,
+  coinAnimation,
+} from './animations';
 
 const CometBase = styled.img`
   position: absolute;
@@ -67,6 +31,17 @@ export const CometRight = styled(CometBase)`
   animation: ${cometRightAnimation} 10s ease-out infinite;
   @media ${({ theme }) => theme.devices.desktop} {
     bottom: 8em;
+  }
+`;
+
+export const Coin = styled(CometBase)`
+  display: none;
+  @media ${({ theme }) => theme.devices.desktop} {
+    display: inline-block;
+    top: 5em;
+    right: 2em;
+    animation: ${coinAnimation} 10s ease-out infinite;
+    filter: grayscale(100%);
   }
 `;
 

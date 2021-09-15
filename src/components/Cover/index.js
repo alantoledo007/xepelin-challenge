@@ -3,6 +3,7 @@ import ImgCover from '@/assets/images/cover.png';
 import ImgCometBottom from '@/assets/images/comet-bottom.svg';
 import ImgCometTop from '@/assets/images/comet-top.svg';
 import ImgCometRight from '@/assets/images/comet-right.png';
+import ImgCoin from '@/assets/images/coin.svg';
 import {
   CometBottom,
   CometRight,
@@ -12,7 +13,8 @@ import {
   P,
   Title,
   Wrapper,
-} from './styles';
+  Coin,
+} from './styled';
 
 export default function Cover() {
   return (
@@ -21,6 +23,7 @@ export default function Cover() {
         <CometBottom src={ImgCometBottom} />
         <CometRight src={ImgCometRight} />
         <CometTop src={ImgCometTop} />
+        <Coin src={ImgCoin} />
         <div>
           <Title>Financia el sueño de tu empresa</Title>
           <P>

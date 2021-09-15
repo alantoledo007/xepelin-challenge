@@ -29,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: PoppinsNormal, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-size: 1rem;
+        color: ${({ theme }) => theme.colors.black}
     }
 
     a {
