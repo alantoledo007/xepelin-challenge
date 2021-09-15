@@ -1,7 +1,13 @@
+import Cover from '@/components/Cover';
+import Features from '@/components/Features';
+import Testimonials from '@/components/Testimonials';
+
 export default function IndexPage() {
   return (
-    <div>
-      <h1>Index</h1>
-    </div>
+    <>
+      <Cover />
+      <Features />
+      <Testimonials />
+    </>
   );
 }
